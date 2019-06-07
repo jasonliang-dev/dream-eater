@@ -11,6 +11,8 @@
 
 ;;; Code:
 
+(require 'seq)
+
 (defvar dream-eater/check-out-name "emacs")
 (defvar dream-eater/email "example@domain.com")
 
@@ -28,13 +30,7 @@
 (declare-function dream-eater--save-buffer "dream-eater.el")
 
 (defun dream-eater--make-buffer-read-only ()
-  "Make the current buffer read only.
-
-All this function does is set `buffer-read-only' to t. The only
-reason why this function exists is because of adding and removing
-hooks.
-
-My elisp-fu is trash."
+  "Make the current buffer read only."
   (setq buffer-read-only t))
 
 (defun dream-eater--make-buffer-writable ()
