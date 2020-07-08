@@ -1,5 +1,8 @@
 # dream-eater
 
+`dream-eater`. A minor mode for working with Dreamweaver users. This
+mode is intended to work alongside Tramp.
+
 This minor mode changes the behaviour of editing files. When
 `dream-eater-mode` is on, all files will be opened in read only mode.
 
@@ -24,6 +27,9 @@ identify you:
 
 To edit a buffer, it must be checked out by running
 `dream-eater/check-out` while viewing the buffer.
+
+> Unlike the same action in Dreamweaver, `dream-eater/check-out` will
+  never let you override someone else's check out.
 
 When you are done making changes, run `dream-eater/check-in` to allow
 others to check out the same file.
